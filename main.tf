@@ -5,6 +5,14 @@ terraform {
       version = "3.74.0"
     }
   }
+  cloud {
+    organization = "self_learn_321"
+
+  workspaces {
+      name = "terraform_123"
+    }
+
+  }
 }
 
 provider "azurerm" { 
