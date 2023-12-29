@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+provider "azurerm" { 
+  features {}
+}
+
 resource "azurerm_resource_group" "terraform-rg" {
   count = 5
   location = "centralindia"
